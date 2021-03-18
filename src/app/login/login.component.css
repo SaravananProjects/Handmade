@@ -1,0 +1,60 @@
+.background-view {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(53,56,59);
+  padding: 5%;
+}
+.sign-in-background {
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/images/df.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2%;
+  box-shadow: 0 4px 8px 0 rgb(136 187 224), 0 6px 20px 0 rgb(86 97 212 / 99%);
+}
+.text-wrapper {
+  text-align: center;
+  padding: 23%;
+  background-color: rgb(23 23 24 / 65%);
+  border-radius: 70% 2% 2% 0;
+  width: 100%;
+  height: 100%;
+}
+.text-wrapper h1{
+  color: #fff;
+  font-style: italic;
+  font-weight: bold;
+}
+.overlay-wrapper {
+  background-color: rgb(53 56 59 / 42%);
+  border-radius: 2%;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.copywrite-wrapper {
+  z-index: 10;
+  position: absolute;
+  bottom: 2%;
+  text-align: right;
+  width: 100%;
+}
+.form-wrapper {
+  padding: 10% 27% 5% 10%;
+  position: relative;
+  z-index: 20;
+}
+.form-wrapper .sign-in-header {
+  margin-bottom: 10%;
+}
+.form-wrapper .custom-input {
+  background-color: #ffffffa6;
+  border-bottom: 3px;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom-style: solid;
+  border-bottom-color:  rgb(1, 161, 255);
+  border-radius: 0px;
+}

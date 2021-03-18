@@ -1,0 +1,130 @@
+<div class="login-wrapper">
+  <div class="background-view">
+    <div class="sign-in-background">
+      <div class="overlay-wrapper">
+        <div class="row" style="width: 100%; height: 100%; margin: 0">
+          <div class="col-lg-8 col-xl-8 col-md-8 col-sm-12 col-xs-12 p-0 m-0">
+            <div class="form-wrapper">
+              <div class="sign-in-header">
+                <h4 class="text-white m-0">Sign Up</h4>
+              </div>
+              <form>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control custom-input"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="ShopName"
+                  />
+                  <span class="text-white float-left"><b>* Enter shop name(mandatory)</b></span>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control custom-input"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="EmailId"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    class="form-control custom-input"
+                    id="exampleInputPassword1"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control custom-input" rows="5" id="comment" placeholder="Product describtion"></textarea>
+                </div>
+                <div class="form-group">
+                  <select id="productTypes" name="cars" class="custom-select mb-3 custom-input" (change)="enableOthers($event.target.value)">
+                    <option selected>Product Type</option>
+                    <option value="1">Birthday gifts</option>
+                    <option value="2">Hand made products</option>
+                    <option value="3">3D gifts</option>
+                    <option value="4">Surprise events</option>
+                    <option value="5">A-Z events</option>
+                    <option value="6">Others</option>
+                  </select>
+                </div>
+                <div class="form-group" *ngIf="productTypeOthers">
+                  <input
+                    type="email"
+                    class="form-control custom-input"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="others products"
+                  />
+                </div>
+                <div class="form-group">
+                  <div class="custom-file mb-3">
+                    <input type="file" class="custom-file-input" id="customFile" name="filename">
+                    <label class="custom-file-label custom-input" for="customFile" style="text-align: left;">Upload product image</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <select name="cars" class="custom-select mb-3 custom-input">
+                    <option selected>Select type of goverment document</option>
+                    <option value="volvo">Ahaar ID</option>
+                    <option value="fiat">Voter ID</option>
+                    <option value="audi">Driving Licence</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <div class="custom-file mb-3">
+                    <input type="file" class="custom-file-input" id="customFile" name="filename">
+                    <label class="custom-file-label custom-input" for="customFile" style="text-align: left;">Upload goverment doucment</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control custom-input"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Uploaded document ID"
+                  />
+                </div>
+                <div class="" style="padding: 10% 0">
+                  <button
+                    type="submit"
+                    class="btn btn-primary mb-4"
+                    style="
+                      border-radius: unset;
+                      border-color: rgb(1, 161, 255);
+                      background-color: rgb(1, 161, 255);
+                    "
+                  >
+                    Submit
+                  </button>
+                  <p class="m-0 text-white">
+                    Already Have an account...? <a routerLink="/login" style="color: rgb(23 23 24 / 65%)"><b>Login</b></a> Here
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-4 col-xl-4 col-md-0 col-sm-0 col-xs-0 p-0 m-0">
+            <div class="text-wrapper">
+              <h1 style="font-size: 3rem;
+              margin-top: 10%;
+              margin-bottom: 15%;">
+                Welcome to SignIn
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="copywrite-wrapper">
+          <p class="m-0 p-0 text-white">
+            @ 2021 dealer Sign Up & Login Form. All Rights Reserved | Design by
+            <b class="">Saravanan</b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

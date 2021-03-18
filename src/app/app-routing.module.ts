@@ -1,10 +1,18 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+// Application components
+import { LoginComponent } from './login/login.component';
+import { DealerRoute } from './shared/utils/dealer-route.enum';
+import { SignInComponent } from './sign-in/sign-in.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+    { path: '', pathMatch: 'full', redirectTo: 'login' },
+    { path: DealerRoute.LOGIN, component: LoginComponent },
+    { path: DealerRoute.SIGNUP, component: SignInComponent },
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -26,7 +26,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -120,5 +122,8 @@
       }
     }
   },
-  "defaultProject": "dealer-app"
+  "defaultProject": "dealer-app",
+  "cli": {
+    "analytics": "e60f7f2b-3e34-4278-876f-3a5ea5cfbd6a"
+  }
 }
